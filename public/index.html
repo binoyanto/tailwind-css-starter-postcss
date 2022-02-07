@@ -3,15 +3,80 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Tailwind CSS Starter</title>
+        <title>Welcome Bino</title>
         <link rel="stylesheet" href="dist/styles.css" />
     </head>
-    <body>
-        <h1
-            class="font-bold text-3xl text-center max-w-2xl mx-auto mt-12 bg-gradient-to-r from-indigo-600 to-pink-600 bg-clip-text text-transparent"
-        >
-            If you see a beautiful gradient on this text, Tailwind CSS is
-            successfully installed and setup
-        </h1>
+    <body class=" antialiased bg-gradient-to-r from-indigo-500 to-black">
+        <div class="flex w-full min-h-screen justify-center items-center">
+            <div class="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 bg-gradient-to-r from-black to-indigo-500 w-full max-w-4xl p-12 rounded-xl shadow-lg text-white overflow-hidden">
+                <div class="flex flex-col space-y-8 justify-between" >
+                    <div>
+                        <h1 class="font-bold text-4xl tracking-wide">Contact Us</h1>
+                        <p class="pt-2 text-indigo-100 text-sm">We kmow that you have something to talk to us, please feel free to 
+                            to write to us in details, so that we can listen from you.
+                        </p>
+                    </div>
+                    <div class="flex flex-col space-y-6">
+                        <div class="inline-flex space-x-2 items-center">
+                            <ion-icon 
+                                name="call-outline" class="text-indigo-400 text-lg"
+                                ></ion-icon>
+                            <span>+(121) 2342 4324</span>
+                        </div>
+
+                        <div class="inline-flex space-x-2 items-center">
+                            <ion-icon 
+                                name="mail-outline" class="text-indigo-400 text-lg"
+                                ></ion-icon>
+                            <span>jango@cform.com</span>
+                        </div>
+                        
+                        <div class="inline-flex space-x-2 items-center">
+                            <ion-icon 
+                                name="location-outline" class="text-indigo-400 text-lg"
+                                ></ion-icon>
+                            <span>Mae12, Proetham Rd. Hellow</span>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4 text-lg">
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    </div>
+                </div>
+                <div class="relative ">
+                    <div class="absolute z-0 w-40 h-40 bg-indigo-300 rounded-full -right-28 -top-28">
+                    </div>
+
+                    <div class="absolute z-0 w-40 h-40 bg-gray-800 rounded-full -bottom-28 -left-28">
+                    </div>
+
+                    <div class="relative z-10 bg-white rounded-xl shadow-lg p-8 text-gray-600 md:80">
+                        <form action=""" class="flex flex-col space-y-4">
+                            <div>
+                                <label for="" class="text-sm font-semibold"> Your Name </label>
+                                <input type="text" placeholder="Your Name" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-indigo-600"></input>
+                             </div>
+
+                             <div>
+                                <label for="" class="text-sm font-semibold"> Email Address </label>
+                                <input type="email" placeholder="Email Address" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-indigo-600"></input>
+                             </div>
+                             
+                             <div>
+                                <label for="" class="text-sm font-semibold"> Your Name </label>
+                                <textarea placeholder="Your Name" rows="4" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-indigo-600"></textarea>
+                             </div>
+                             <button class="inline-block self-end bg-indigo-700 text-white font-bold rounded-lg px-6 py-2 uppercase text-sm">
+                                Send Message
+                             </button>
+                        </form>     
+                </div>
+                    
+                </div>
+            </div>
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     </body>
 </html>
